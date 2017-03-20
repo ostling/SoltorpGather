@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS `temperatures` (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `temperature` double NOT NULL,
+  `dateMeasured` date NOT NULL,
+  `timeMeasured` time NOT NULL,
+  `device` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+
+CREATE TABLE IF NOT EXISTS `pressure` (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `pressure` int NOT NULL,
+  `dateMeasured` date NOT NULL,
+  `timeMeasured` time NOT NULL,
+  `device` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
